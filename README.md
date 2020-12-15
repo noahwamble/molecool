@@ -5,7 +5,8 @@ molecool
 [![codecov](https://codecov.io/gh/REPLACE_WITH_OWNER_ACCOUNT/molecool/branch/master/graph/badge.svg)](https://codecov.io/gh/REPLACE_WITH_OWNER_ACCOUNT/molecool/branch/master)
 
 
-A python package for analyzing and visualing xyz files. 
+A python package for analyzing and visualing xyz files.
+This function produces graphs of given structures. This repository is currently under development. 
 
 ### Copyright
 
@@ -13,6 +14,6 @@ Copyright (c) 2020, Noah Wamble
 
 
 #### Acknowledgements
- 
-Project based on the 
+
+Project based on the
 [Computational Molecular Science Python Cookiecutter](https://github.com/molssi/cookiecutter-cms) version 1.5.

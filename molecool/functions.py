@@ -1,8 +1,9 @@
 """
 functions.py
-A python package for analyzing and visualing xyz files. 
+A python package for analyzing and visualing xyz files.
 
-Handles the primary functions
+Handles the primary functions.
+
 """
 
 
