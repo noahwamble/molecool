@@ -1,10 +1,14 @@
 """
 molecool
-A python package for analyzing and visualing xyz files. 
+A python package for analyzing and visualing xyz files.
 """
 import sys
 from setuptools import setup, find_packages
 import versioneer
+import os
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
 
 short_description = __doc__.split("\n")
 
