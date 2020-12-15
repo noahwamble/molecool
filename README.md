@@ -6,7 +6,8 @@ molecool
 
 
 A python package for analyzing and visualing xyz files.
-This function produces graphs of given structures. This repository is currently under development. 
+This function produces graphs of given structures. This repository is currently under development.
+This code was developed at Notre Dame. 
 
 ### Copyright
 
