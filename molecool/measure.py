@@ -1,7 +1,9 @@
 """
     This module is for functions which perform measurements.
 """
-import numpy as np 
+import numpy as np
+from .atom_data import atomic_weights
+
 
 def calculate_distance(rA, rB):
     # This function calculates the distance between two points given as numpy arrays.
@@ -20,3 +22,24 @@ def calculate_angle(rA, rB, rC, degrees=False):
         return np.degrees(theta)
     else:
         return theta
+
+def calculate_molecular_mass(symbols):
+   """Calculate the mass of a molecule.
+
+   Parameters
+   ----------
+   symbols : list
+       A list of elements.
+
+   Returns
+   -------
+   mass : float
+       The mass of the molecule
+   """
+   #initialize weight
+   weight= 0
+   #sum over all symbols
+   for i in symbols:
+       weight += atomic_weights[i]
+
+   return weight

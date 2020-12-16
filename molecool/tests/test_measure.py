@@ -4,6 +4,7 @@
 #imports
 import molecool
 import numpy as np
+import pytest
 
 #test the calculate_distance function
 def test_calculate_distance():
@@ -21,3 +22,24 @@ def test_calculate_distance():
 
     #now perform the test
     assert calculated_distance == expected
+
+def test_calculate_angle():
+   """Test the calculate_angle function"""
+
+   r1 = np.array([1, 0, 0])
+   r2 = np.array([0, 0, 0])
+   r3 = np.array([0, 1, 0])
+
+   expected_value = 90
+
+   calculated_value = molecool.calculate_angle(r1, r2, r3, degrees=True)
+   assert expected_value == calculated_value
+
+def test_molecular_mass():
+    symbols = ['C', 'H', 'H', 'H', 'H']
+
+    calculated_mass = molecool.calculate_molecular_mass(symbols)
+
+    actual_mass = 16.04
+
+    assert pytest.approx(actual_mass, abs=1e-2) == calculated_mass
